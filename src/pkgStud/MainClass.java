@@ -4,11 +4,9 @@ import pkgStud.Student;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MainClass /*extends Student*/ {
+public class MainClass {
 
     public static void main(String[] args) {
-     //   MainClass mc= new MainClass();
-        
         int studentCount= getNumberOfStudents();
 
         ArrayList<Student> studentList= new ArrayList<Student>();
@@ -50,21 +48,18 @@ public class MainClass /*extends Student*/ {
      displayUsingObj(studentList);
     }
     
-    private static int getNumberOfStudents()
-    {
+    private static int getNumberOfStudents() {
      System.out.println("Enter no. of Students (integer value) to store in the system: ");
      Scanner sc= new Scanner(System.in);
      int s= sc.nextInt();
      return s;
     }
 
-    private static void displayDetails(ArrayList<Student> students)
-    {
+    private static void displayDetails(ArrayList<Student> students) {
      String n, ad;
      int a;
      double m;
-     for(int i=0; i<students.size(); i++)
-        {
+     for(int i=0; i<students.size(); i++) {
          n= students.get(i).getName();
          a= students.get(i).getAge();
          m= students.get(i).getMarks();
@@ -84,10 +79,8 @@ public class MainClass /*extends Student*/ {
      double uMarks= sc.nextDouble();
      System.out.println("Enter updated Address for PersonalRecord: ");
      String uAddr= sc.next();
-     for(int i=0; i<stu.size(); i++)
-        {
-         if(id == i)
-           {
+     for(int i=0; i<stu.size(); i++) {
+         if(id == i) {
             matchFound= true;
             stu.get(i).setName(uName);
             stu.get(i).setAge(uAge);
@@ -96,19 +89,16 @@ public class MainClass /*extends Student*/ {
             System.out.println("Details updated. \n");
            }
         }
-     if(!(matchFound))
-       {
+     if(!(matchFound)) {
         System.out.println("Cannot update Details... ID not found ! \n");
        }
     }
 
-    private static void displayUsingObj(ArrayList<Student> studObj)
-    {
+    private static void displayUsingObj(ArrayList<Student> studObj) {
      String n, ad;
      int a;
      double m;
-     for(Student st : studObj)
-        {
+     for(Student st : studObj) {
          n= st.getName();
          a= st.getAge();
          m= st.getMarks();
