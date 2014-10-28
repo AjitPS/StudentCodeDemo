@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainClass {
-
     public static void main(String[] args) {
+
         int studentCount= getNumberOfStudents();
 
         ArrayList<Student> studentList= new ArrayList<Student>();
