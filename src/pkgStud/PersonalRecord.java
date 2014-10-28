@@ -3,18 +3,15 @@ package pkgStud;
 public class PersonalRecord {
 
  private String addr;
- PersonalRecord(String ad)
- {
+ PersonalRecord(String ad) {
   this.addr= ad;
  }
  
- public String getAddress()
- {
+ public String getAddress() {
   return this.addr;
  }
 
- public void setAddress(String newAddr)
- {
+ public void setAddress(String newAddr) {
   this.addr= newAddr;
  }
 }
