@@ -3,11 +3,12 @@ package pkgStud;
 import pkgStud.Student;
 import java.util.ArrayList;
 import java.util.Scanner;
-/** Demo app */
+
+/** Main Class */
 public class MainClass {
     public static void main(String[] args) {
 
-        int studentCount= getNumberOfStudents();
+        int studentCount= getNumberOfStudents(); // Get Number of Students.
 
         ArrayList<Student> studentList= new ArrayList<Student>();
 
