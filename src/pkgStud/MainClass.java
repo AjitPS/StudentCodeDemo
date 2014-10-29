@@ -3,7 +3,7 @@ package pkgStud;
 import pkgStud.Student;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/** Demo app */
 public class MainClass {
     public static void main(String[] args) {
 
