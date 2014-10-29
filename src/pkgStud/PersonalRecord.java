@@ -4,7 +4,6 @@ package pkgStud;
 public class PersonalRecord {
 
  private String addr;
- private String county= "";
 
  PersonalRecord(String ad) {
   this.addr= ad;
@@ -17,7 +16,4 @@ public class PersonalRecord {
   this.addr= newAddr;
  }
 
- public String getCounty() {
-  return this.county;
- }
 }
