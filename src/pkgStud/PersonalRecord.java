@@ -1,5 +1,6 @@
 package pkgStud;
 
+/** PersonalRecord class */
 public class PersonalRecord {
 
  private String addr;
