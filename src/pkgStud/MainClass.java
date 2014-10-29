@@ -10,7 +10,7 @@ public class MainClass {
 
         int studentCount= getNumberOfStudents(); // Get Number of Students.
 
-        ArrayList<Student> studentList= new ArrayList<Student>();
+        ArrayList<Student> studentList= new ArrayList<Student>(); // Arraylist of "Student" objects.
 
         Scanner sc= new Scanner(System.in);
         System.out.println("Adding new Students' details...");

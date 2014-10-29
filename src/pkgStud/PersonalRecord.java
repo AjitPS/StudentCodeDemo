@@ -2,7 +2,6 @@ package pkgStud;
 
 /** PersonalRecord class */
 public class PersonalRecord {
-
  private String addr;
 
  PersonalRecord(String ad) {
@@ -15,5 +14,4 @@ public class PersonalRecord {
  public void setAddress(String newAddr) {
   this.addr= newAddr;
  }
-
 }
