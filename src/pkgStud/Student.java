@@ -1,6 +1,6 @@
 package pkgStud;
 
-/** Student class. */
+/** Student class */
 public class Student extends PersonalRecord {
 
  private String name;
