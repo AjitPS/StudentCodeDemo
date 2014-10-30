@@ -24,7 +24,8 @@ public class MainClass {
             System.out.println("Personal Record: Enter Student's Home Address: ");
             String addr= sc.next();
 
-            studentList.add(new Student(name, age, marks, addr)); // Creating the new Objects.
+            // Creating the new "Student" Object.
+            studentList.add(new Student(name, age, marks, addr));
            }
 
         int ch;
@@ -33,11 +34,11 @@ public class MainClass {
          ch= sc.nextInt();
          switch(ch)
                {
-                case 1: // Display details.
+                case 1: // Display details of all the Students.
                         displayDetails(studentList);
                         break;
 
-                case 2: // Update details.
+                case 2: // Update Student details, using ID.
                         System.out.println("Enter ID to update [from 0 onwards]: ");
                         int id= sc.nextInt();
                         updateDetails(studentList, id);
@@ -46,6 +47,8 @@ public class MainClass {
         }while(ch==1 || ch==2);
 
      System.out.println("Exiting System... Printing final records: \n");
+
+     // Display all Student details.
      displayUsingObj(studentList);
     }
     

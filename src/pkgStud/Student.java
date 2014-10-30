@@ -3,9 +3,9 @@ package pkgStud;
 /** Student class */
 public class Student extends PersonalRecord {
 
- private String name;
- private int age;
- private double marks;
+ private String name; // name
+ private int age; // age
+ private double marks; // marks
  
  Student(String studName, int studAge, double studMarks, String studAddr) {
 
