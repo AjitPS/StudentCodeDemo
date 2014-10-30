@@ -1,5 +1,6 @@
 package pkgStud;
 
+/** Student class */
 public class Student extends PersonalRecord {
 
  private String name;
@@ -8,6 +9,7 @@ public class Student extends PersonalRecord {
  
  Student(String studName, int studAge, double studMarks, String studAddr) {
   super(studAddr); // pass Address to Personal Record class.
+
   this.name= studName;
   this.age= studAge;
   this.marks= studMarks;
